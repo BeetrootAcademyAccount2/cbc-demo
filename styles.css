@@ -72,6 +72,19 @@ header {
   align-self: start;
 }
 
+@supports (not (display: flex)) and (not (align-self: start)) {
+  .section-1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .top {
+    position: relative;
+    position: 410px;
+  }
+}
+
 /* Grid Section */
 
 .section-2 {
