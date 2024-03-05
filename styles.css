@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 60px;
+}
+
 body {
   margin: 0;
 }
@@ -17,11 +21,27 @@ main {
 }
 
 .item {
+  display: inline-block;
+
   width: 80px;
   height: 80px;
   background-color: aqua;
   border: 2px solid black;
   font-size: 24px;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+  position: relative;
+  left: 176px;
+  bottom: 90px;
+}
+
+.item:nth-child(5),
+.item:nth-child(6) {
+  position: relative;
+  right: 176px;
+  top: 90px;
 }
 
 /* Main Navigation */
@@ -41,6 +61,7 @@ header {
 .main-navigation {
   display: flex;
   align-items: center;
+  float: right;
 }
 
 .main-navigation ul {
@@ -52,6 +73,7 @@ header {
 
 .main-navigation li {
   margin-left: 15px;
+  display: inline-block;
 }
 
 .main-navigation a {
@@ -75,11 +97,19 @@ header {
 /* Grid Section */
 
 .section-2 {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   align-content: center;
-  justify-content: center;
+  justify-content: center; */
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#grid {
+  margin-top: -90px;
+  height: 80px;
 }
 
 /* Img Section */
