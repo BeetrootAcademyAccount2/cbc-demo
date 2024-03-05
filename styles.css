@@ -69,17 +69,26 @@ header {
 }
 
 .top {
-  align-self: start;
+  /* align-self: start; */
+  position: relative;
+  bottom: 408px;
 }
 
 /* Grid Section */
 
 .section-2 {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   align-content: center;
+  justify-content: center; */
+  display: flex;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  /* padding: 324px 700px; */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Img Section */
